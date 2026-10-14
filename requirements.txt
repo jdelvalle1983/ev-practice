@@ -11,6 +11,7 @@ prompt_toolkit==3.0.52
 ptyprocess==0.7.0
 pure_eval==0.2.4
 Pygments==2.21.0
+python-dotenv==1.2.1
 stack-data==0.6.3
 traitlets==5.15.1
 typing_extensions==4.16.0
