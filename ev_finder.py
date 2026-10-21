@@ -11,7 +11,7 @@ if price < 20000:
     print("Look at: Chevy Bolt, Nissan Leaf")
 elif price < 35000:
     print("Look at: Tesla Model 3, Kia EV6")
-else: price < 60000
+elif price < 60000:
     print("Look at: Ford F-150 Lightning, Rivian R1T")
-elif price >= 60000
+else: 
     print("Look at: Tesla Model S, Rivian R1S")
