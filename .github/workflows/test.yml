@@ -1,6 +1,10 @@
 name: Test EV finder
 
-on: push
+on: 
+  push:
+  worflow_dispatch:
+  schedule:
+    - cron: "0 3 * * *"
 
 jobs:
   test:
