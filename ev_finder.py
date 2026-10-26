@@ -10,7 +10,7 @@ def pick_cars(price):
         return "Chevy Bolt, Nissan Leaf"
     elif price < 35000:
         return "Tesla Model 3, Kia EV6"
-    elif price < 70000:
+    elif price < 60000:
         return "Ford F-150 Lightning, Rivian R1T"
     else:
         return "Tesla Model S, Rivian R1S"
