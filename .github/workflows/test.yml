@@ -16,4 +16,4 @@ jobs:
           python-version: "3.9"
       - run: pip install -r requirements.txt
       - run: echo 55000 | python ev_finder.py    
-          
+      - run: pytest     
