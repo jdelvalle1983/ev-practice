@@ -8,3 +8,6 @@ def test_just_under_edge():
 
 def test_edge_case():
     assert pick_cars(60000) == "Tesla Model S, Rivian R1S"      
+
+def test_bold_edge():
+    assert pick_cars(20000) == "Tesla Model 3, Kia EV6"
