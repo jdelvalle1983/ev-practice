@@ -17,3 +17,17 @@ jobs:
       - run: pip install -r requirements.txt
       - run: echo 55000 | python ev_finder.py    
       - run: pytest     
+
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.9"
+      - run: pip install -r requirements.txt
+      - run: echo 55000 | python ev_finder.py
+        env:
+          EV_API_KEY: ${{ secrets.EV_API_KEY }}      
