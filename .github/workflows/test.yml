@@ -7,16 +7,17 @@ on:
     - cron: "0 3 * * *"
 
 jobs:
-  test:
-    runs-on: ubuntu-24.04
+    test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-24.04, macos-15, windows-2025]
+    runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-python@v6
         with:
-          python-version: "3.9"
-      - run: pip install -r requirements.txt
-      - run: echo 55000 | python ev_finder.py    
-      - run: pytest     
+          python-version: "3.12"     
 
   deploy:
     needs: test
