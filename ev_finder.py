@@ -16,6 +16,6 @@ def pick_cars(price):
         return "Tesla Model S, Rivian R1S"
 
 if __name__== "__main__":
-    price = int(input("Max price?"))
+    price = int(input("Max price? "))
     print("Look at: " + pick_cars(price)) 
     
