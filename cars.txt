@@ -1,0 +1,3 @@
+Chevy Bolt,25000
+Tesla Model 3,39000
+Kia EV6,43000
